@@ -5,10 +5,6 @@ const typeDefs = require("./gql/schema");
 const resolvers = require("./gql/resolver");
 require("dotenv").config({path: ".env"});
 
-mongoose.connect(process.env.BBDD,{
-	useNewUrlParser: false,
-	useUnifiedTopology: true,
-},
 (err, _)=>{
 	if(err){
 		console.log('Error de conexion' + err);
